@@ -47,18 +47,18 @@ export default function EntryList({
         return (
           <div
             key={entry.id}
-            className="flex items-center justify-between bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl px-4 py-3"
+            className="flex items-center justify-between gap-2 bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl px-4 py-3"
           >
-            <div>
-              <div className="text-white text-sm font-semibold">
+            <div className="min-w-0 flex-1">
+              <div className="text-white text-sm font-semibold truncate">
                 {entry.name}
               </div>
-              <div className="text-[var(--color-muted)] text-xs mt-0.5">
+              <div className="text-[var(--color-muted)] text-xs mt-0.5 break-words">
                 {entry.grams} г · 🔥{entry.calories} · 🥩{entry.protein} · 🥑
                 {entry.fat} · 🍞{entry.carbs} · 🌾{entry.fiber}
               </div>
             </div>
-            <div className="flex gap-2 shrink-0 ml-2">
+            <div className="flex gap-2 shrink-0">
               <button
                 onClick={() => setEditingId(entry.id)}
                 className="text-xs text-[var(--color-muted)] hover:text-white px-2 py-1 cursor-pointer"

@@ -59,7 +59,7 @@ export default function EntryForm({
   };
 
   const inputClass =
-    "w-full px-3.5 py-3 rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] text-white text-sm placeholder:text-[var(--color-muted)] outline-none focus:border-[var(--color-accent)]";
+    "w-full px-3.5 py-3 rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] text-white text-sm text-center placeholder:text-[var(--color-muted)] outline-none focus:border-[var(--color-accent)]";
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-2.5">

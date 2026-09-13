@@ -41,15 +41,15 @@ export default function HistoryList({
                 setOpenDate(isOpen ? null : day.date);
                 if (isOpen) setAddingFor(null);
               }}
-              className="w-full flex items-center justify-between bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl px-4 py-3 text-left cursor-pointer"
+              className="w-full bg-[var(--color-card)] border border-[var(--color-border)] rounded-xl px-4 py-3 text-left cursor-pointer"
             >
-              <span className="text-white text-sm font-semibold">
+              <div className="text-white text-sm font-semibold">
                 {formatDayLabel(day.date)}
-              </span>
-              <span className="text-[var(--color-muted)] text-xs">
+              </div>
+              <div className="text-[var(--color-muted)] text-xs mt-0.5 break-words">
                 🔥{totals.calories} · 🥩{totals.protein} · 🥑{totals.fat} · 🍞
                 {totals.carbs} · 🌾{totals.fiber}
-              </span>
+              </div>
             </button>
             {isOpen && (
               <div className="pl-2 pt-2 pb-1 flex flex-col gap-2">
