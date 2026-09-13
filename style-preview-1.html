@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Стиль 1 — Игривый</title>
+<style>
+  body { margin:0; font-family:'Comic Sans MS', 'Trebuchet MS', sans-serif; background: linear-gradient(135deg,#ffe259,#ffa751); min-height:100vh; display:flex; align-items:center; justify-content:center; }
+  .card { background:white; border-radius:32px; padding:32px; width:360px; box-shadow: 0 12px 0 rgba(0,0,0,0.1); }
+  h2 { margin:0 0 4px; color:#ff6b35; font-size:24px; }
+  .sub { color:#999; margin-bottom:20px; font-size:14px; }
+  .progress { background:#ffe8d6; border-radius:20px; height:24px; overflow:hidden; margin-bottom:8px; }
+  .fill { background: linear-gradient(90deg,#ff6b35,#ffb347); height:100%; width:62%; border-radius:20px; display:flex; align-items:center; justify-content:flex-end; color:white; font-weight:bold; font-size:12px; padding-right:8px; }
+  .stats { display:flex; justify-content:space-between; margin:20px 0; }
+  .stat { text-align:center; background:#fff4e8; border-radius:16px; padding:10px; flex:1; margin:0 4px; }
+  .stat b { display:block; font-size:18px; color:#ff6b35; }
+  .stat span { font-size:11px; color:#aaa; }
+  input, button { width:100%; padding:12px; border-radius:16px; border:2px solid #ffe0c2; margin-bottom:10px; box-sizing:border-box; font-size:14px; }
+  button { background:#ff6b35; color:white; border:none; font-weight:bold; font-size:16px; cursor:pointer; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h2>🍎 Сегодня</h2>
+    <div class="sub">1 240 / 2 000 ккал</div>
+    <div class="progress"><div class="fill">62%</div></div>
+    <div class="stats">
+      <div class="stat"><b>58г</b><span>Белки</span></div>
+      <div class="stat"><b>40г</b><span>Жиры</span></div>
+      <div class="stat"><b>120г</b><span>Углеводы</span></div>
+    </div>
+    <input placeholder="Название блюда">
+    <input placeholder="Граммовка">
+    <button>+ Добавить 🎉</button>
+  </div>
+</body>
+</html>

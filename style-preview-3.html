@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Стиль 3 — Смелый / тёмный</title>
+<style>
+  body { margin:0; font-family:'Segoe UI',sans-serif; background:#0a0a0f; min-height:100vh; display:flex; align-items:center; justify-content:center; }
+  .card { background:#141420; border-radius:20px; padding:36px; width:360px; box-shadow:0 0 60px rgba(124,58,237,0.15); }
+  h2 { margin:0 0 4px; color:#fff; font-size:14px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#7c3aed; }
+  .big { font-size:44px; font-weight:800; color:#fff; margin-bottom:2px; }
+  .sub { color:#666; margin-bottom:24px; font-size:13px; }
+  .progress { background:#1f1f2e; border-radius:8px; height:10px; overflow:hidden; margin-bottom:24px; }
+  .fill { background:linear-gradient(90deg,#7c3aed,#a855f7); height:100%; width:62%; }
+  .stats { display:flex; gap:10px; margin-bottom:28px; }
+  .stat { flex:1; text-align:center; background:#1a1a28; border-radius:12px; padding:14px 8px; border:1px solid #232336; }
+  .stat b { display:block; font-size:20px; color:#a855f7; font-weight:700; }
+  .stat span { font-size:10px; color:#555; letter-spacing:1px; text-transform:uppercase; }
+  input, button { width:100%; padding:14px; border-radius:10px; border:1px solid #232336; margin-bottom:12px; box-sizing:border-box; font-size:14px; background:#0d0d14; color:#fff; }
+  input::placeholder { color:#555; }
+  button { background:#7c3aed; color:white; border:none; font-weight:700; font-size:14px; cursor:pointer; letter-spacing:1px; text-transform:uppercase; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h2>Сегодня</h2>
+    <div class="big">1 240</div>
+    <div class="sub">из 2 000 ккал</div>
+    <div class="progress"><div class="fill"></div></div>
+    <div class="stats">
+      <div class="stat"><b>58г</b><span>Белки</span></div>
+      <div class="stat"><b>40г</b><span>Жиры</span></div>
+      <div class="stat"><b>120г</b><span>Угл.</span></div>
+    </div>
+    <input placeholder="Название блюда">
+    <input placeholder="Граммовка">
+    <button>Добавить</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Стиль 2 — Минимализм</title>
+<style>
+  body { margin:0; font-family:-apple-system,'Helvetica Neue',sans-serif; background:#fafafa; min-height:100vh; display:flex; align-items:center; justify-content:center; }
+  .card { background:white; border:1px solid #eee; border-radius:4px; padding:40px; width:360px; }
+  h2 { margin:0 0 2px; color:#111; font-size:15px; font-weight:500; letter-spacing:0.5px; text-transform:uppercase; }
+  .sub { color:#999; margin-bottom:24px; font-size:13px; }
+  .big { font-size:36px; font-weight:300; color:#111; margin-bottom:4px; }
+  .progress { background:#f0f0f0; height:2px; margin-bottom:28px; }
+  .fill { background:#111; height:100%; width:62%; }
+  .stats { display:flex; justify-content:space-between; margin-bottom:32px; border-top:1px solid #eee; padding-top:16px; }
+  .stat { text-align:left; }
+  .stat b { display:block; font-size:16px; color:#111; font-weight:400; }
+  .stat span { font-size:11px; color:#bbb; letter-spacing:0.5px; text-transform:uppercase; }
+  input, button { width:100%; padding:10px 0; border:none; border-bottom:1px solid #ddd; margin-bottom:16px; box-sizing:border-box; font-size:14px; background:transparent; }
+  input:focus { outline:none; border-bottom-color:#111; }
+  button { background:#111; color:white; border:none; padding:12px; font-size:13px; letter-spacing:1px; text-transform:uppercase; cursor:pointer; margin-top:8px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h2>Сегодня</h2>
+    <div class="big">1 240 ккал</div>
+    <div class="sub">из 2 000</div>
+    <div class="progress"><div class="fill"></div></div>
+    <div class="stats">
+      <div class="stat"><b>58г</b><span>Белки</span></div>
+      <div class="stat"><b>40г</b><span>Жиры</span></div>
+      <div class="stat"><b>120г</b><span>Углеводы</span></div>
+    </div>
+    <input placeholder="Название блюда">
+    <input placeholder="Граммовка">
+    <button>Добавить</button>
+  </div>
+</body>
+</html>
