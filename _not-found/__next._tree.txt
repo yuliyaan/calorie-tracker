@@ -1,2 +1,2 @@
-:HL["/calorie-tracker/_next/static/chunks/0jpf4x7sz96u_.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"jVWAgaa-dq0W-VCyRmr3r"}
+:HL["/calorie-tracker/_next/static/chunks/081eyno0km8xy.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"Ye98Ss8DAmKECEqBPY-78"}
